@@ -41,7 +41,7 @@
     const m = Math.max(parseFloat(materials.value) || 0, 0);
     const h = Math.max(parseFloat(hours.value) || 0, 0);
     const cost = m + h * MEN * RATE;
-    const sale = cost / (1 - MARGIN);
+    const sale = Math.round(cost / (1 - MARGIN) / 5) * 5;
     price.textContent = sale.toLocaleString('en-US', { style: 'currency', currency: 'USD' });
   }
 
