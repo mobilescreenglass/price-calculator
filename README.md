@@ -16,10 +16,10 @@ The employee enters:
 ```
 labor cost = hours x 2 men x $30
 total cost = material cost + labor cost
-sale price = total cost / 0.45, then rounded to the nearest $5
+sale price = total cost / 0.45, then rounded UP to the next $5
 ```
 
-Example: $100 materials, 3 hours -> ($100 + $180) / 0.45 = $622.22 -> shown as $620
+Example: $100 materials, 3 hours -> ($100 + $180) / 0.45 = $622.22 -> shown as $625
 
 ## Changing the assumptions
 Edit the three constants (`MEN`, `RATE`, `MARGIN`) near the bottom of `index.html`, then commit and push. Update this README to match.
