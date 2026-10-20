@@ -41,7 +41,7 @@
     const m = Math.max(parseFloat(materials.value) || 0, 0);
     const h = Math.max(parseFloat(hours.value) || 0, 0);
     const cost = m + h * MEN * RATE;
-    const sale = Math.ceil(cost / (1 - MARGIN) / 5 - 1e-9) * 5; // round up to next $5 (tiny offset avoids float error)
+    const sale = Math.ceil(cost / (1 - MARGIN) / 5 - 1e-9) * 5 + 0; // round up to next $5 (tiny offset avoids float error)
     price.textContent = sale.toLocaleString('en-US', { style: 'currency', currency: 'USD' });
   }
 
